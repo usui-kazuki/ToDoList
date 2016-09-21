@@ -28,7 +28,7 @@
 
     respond_to do |format|
       if @category.save
-        format.html { redirect_to @category, notice: 'カテゴリーが作成されました。' }
+        format.html { redirect_to categories_path, notice: 'カテゴリーが作成されました。' }
         format.json { render :show, status: :created, location: @category }
       else
         format.html { render :new }
